@@ -12,8 +12,8 @@ cask "agm" do
   app "AGM.app"
 
   caveats <<~EOS
-    AGM #{version} is not signed or notarized yet. Install with
-    --no-quarantine, or clear the quarantine attribute afterwards:
+    AGM #{version} is not signed or notarized yet. If macOS blocks the
+    first launch, clear the quarantine attribute for this app only:
       xattr -dr com.apple.quarantine "#{appdir}/AGM.app"
   EOS
 
