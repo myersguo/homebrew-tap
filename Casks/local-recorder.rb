@@ -10,7 +10,8 @@ cask "local-recorder" do
   depends_on arch: :arm64
   depends_on macos: ">= :ventura"
 
-  app "Local Recorder.app"
+  # The archive wraps the bundle in a versioned preview folder.
+  app "Local Recorder preview #{version}/Local Recorder.app"
 
   caveats <<~EOS
     Local Recorder #{version} is a technical preview: it is not signed or
