@@ -1,6 +1,6 @@
 cask "agm" do
-  version "0.9.0"
-  sha256 "a1555c798f227fd209da339e408d516f1cdc112e94ae82ac2e5e5e8c0ec44819"
+  version "0.10.0"
+  sha256 "30687d715034794817b129c85b47f9ac0959451a41f22aa3c2a34e7857efd53c"
 
   url "https://github.com/myersguo/agm/releases/download/v#{version}/AGM-#{version}-macos-arm64-unsigned.zip"
   name "AGM"
