@@ -1,6 +1,6 @@
 cask "lcoder" do
-  version "0.1.0"
-  sha256 "2f2a31a534c197027802058ab56234408411a8787843bdca6bd66449e5b43dd8"
+  version "0.1.1"
+  sha256 "6e357b29bae73ff71ff4dff4144541ee64818ddcd11369fdd755f7b74f448dd0"
 
   url "https://github.com/myersguo/LCoder/releases/download/v#{version}/LCoder-#{version}-macos-arm64-unsigned.zip"
   name "LCoder"
