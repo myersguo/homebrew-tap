@@ -1,10 +1,12 @@
 # myersguo/homebrew-tap
 
-Homebrew tap for [AGM](https://github.com/myersguo/agm) and
+Homebrew tap for [AGM](https://github.com/myersguo/agm),
+[LCoder](https://github.com/myersguo/LCoder), and
 [Local Recorder](https://github.com/myersguo/local-recorder).
 
 ```bash
 brew install --cask myersguo/tap/agm
+brew install --cask myersguo/tap/lcoder
 brew install --cask myersguo/tap/local-recorder
 ```
 

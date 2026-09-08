@@ -1,0 +1,28 @@
+cask "lcoder" do
+  version "0.1.0"
+  sha256 "2f2a31a534c197027802058ab56234408411a8787843bdca6bd66449e5b43dd8"
+
+  url "https://github.com/myersguo/LCoder/releases/download/v#{version}/LCoder-#{version}-macos-arm64-unsigned.zip"
+  name "LCoder"
+  desc "Local code-reading and Git review workbench with embedded AI terminals"
+  homepage "https://github.com/myersguo/LCoder"
+
+  depends_on arch: :arm64
+  depends_on macos: :ventura
+
+  app "LCoder.app"
+
+  zap trash: [
+    "~/Library/Application Support/com.myersguo.lcoder",
+    "~/Library/Caches/com.myersguo.lcoder",
+    "~/Library/Preferences/com.myersguo.lcoder.plist",
+    "~/Library/Saved Application State/com.myersguo.lcoder.savedState",
+    "~/Library/WebKit/com.myersguo.lcoder",
+  ]
+
+  caveats <<~EOS
+    LCoder #{version} is ad-hoc signed, but not Developer ID signed or notarized.
+    If macOS blocks the first launch, clear the quarantine attribute for this app only:
+      xattr -dr com.apple.quarantine "#{appdir}/LCoder.app"
+  EOS
+end
