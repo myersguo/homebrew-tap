@@ -4,7 +4,7 @@ cask "cdisk" do
 
   url "https://github.com/myersguo/cdisk/releases/download/v#{version}/CDisk-macos-arm64-unsigned.zip"
   name "CDisk"
-  desc "Local-first macOS disk analyzer and safe cleanup tool"
+  desc "Local-first disk analyzer and safe cleanup tool"
   homepage "https://github.com/myersguo/cdisk"
 
   depends_on arch: :arm64
