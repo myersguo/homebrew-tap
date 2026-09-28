@@ -1,6 +1,6 @@
 cask "cdisk" do
-  version "0.6.1"
-  sha256 "febd5c30cfd5d69488d9430a2ecb5cf4b6bce0af2f8c3563bf68f30edfb00c30"
+  version "0.6.2"
+  sha256 "a723751a78d99531e139732a27cc22a0a28238a21ad4df198fb3d030cfba6a16"
 
   url "https://github.com/myersguo/cdisk/releases/download/v#{version}/CDisk-macos-arm64-unsigned.zip"
   name "CDisk"
@@ -8,7 +8,7 @@ cask "cdisk" do
   homepage "https://github.com/myersguo/cdisk"
 
   depends_on arch: :arm64
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "CDisk.app"
 
