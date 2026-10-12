@@ -1,11 +1,13 @@
 # myersguo/homebrew-tap
 
-Homebrew tap for [CDisk](https://github.com/myersguo/cdisk),
+Homebrew tap for [MDB](https://github.com/myersguo/mdb),
+[CDisk](https://github.com/myersguo/cdisk),
 [AGM](https://github.com/myersguo/agm),
 [LCoder](https://github.com/myersguo/LCoder), and
 [Local Recorder](https://github.com/myersguo/local-recorder).
 
 ```bash
+brew install --cask myersguo/tap/mdb
 brew install --cask myersguo/tap/cdisk
 brew install --cask myersguo/tap/agm
 brew install --cask myersguo/tap/lcoder
