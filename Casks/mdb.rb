@@ -1,6 +1,6 @@
 cask "mdb" do
-  version "0.1.0"
-  sha256 "47f5ce8447b83e0dd700f5d3606510438940f0c66a90271e493ad8d4e5702d63"
+  version "0.1.1"
+  sha256 "cc4b83019766a62f35a5f1cb4f806eb1beaf3f8003b79bb95c425b25cd112ee0"
 
   url "https://github.com/myersguo/mdb/releases/download/v#{version}/MDB-#{version}-macos-arm64.zip"
   name "MDB"
